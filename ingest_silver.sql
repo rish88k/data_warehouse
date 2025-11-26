@@ -176,8 +176,8 @@ BEGIN
 			else birth_date
 		end as birth_date,
 		case 
-			when upper(trim(gender)) in ('F', 'female') then 'Female'
-			when upper(trim(gender)) in ('M', 'Male') then 'Male'
+			when upper(trim(gender)) in ('F', 'FEMALE') then 'Female'
+			when upper(trim(gender)) in ('M', 'MALE') then 'Male'
 			else 'n/a'
 		end as gender
 		from bronze.erp_cust_info;
